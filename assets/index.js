@@ -57,7 +57,7 @@ function loadTodos() {
         todosByDate = res;
         moveUncompletedTodosToToday();
         updateDays();
-        renderTodoList(false);
+        renderTodoList();
     });
 }
 
