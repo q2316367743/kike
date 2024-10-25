@@ -1,0 +1,26 @@
+{
+  "name": "kike",
+  "version": "1.0.0",
+  "description": "类似Kite待办的单文件web版待办小工具，代码几乎全部由GPT生成。",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/q2316367743/kike.git"
+  },
+  "keywords": [
+    "待办",
+    "web"
+  ],
+  "author": "troilus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/q2316367743/kike/issues"
+  },
+  "homepage": "https://github.com/q2316367743/kike#readme",
+  "devDependencies": {
+    "utools-api-types": "^5.2.0"
+  }
+}

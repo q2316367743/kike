@@ -1,0 +1,16 @@
+.bg-color {
+    background-color: #F4F4F5;
+
+}
+
+.bg-color.detach {
+    background-color: #DFDFDF;
+}
+
+body.dark .bg-color {
+    background-color: #303133;
+}
+
+body.dark .bg-color.detach {
+    background-color: #1F1F1F;
+}

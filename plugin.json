@@ -1,0 +1,31 @@
+{
+    "$schema": "./node_modules/utools-api-types/resource/utools.schema.json",
+    "main": "index.html",
+    "logo": "logo.png",
+    "platform": [
+        "win32",
+        "darwin",
+        "linux"
+    ],
+    "pluginSetting": {
+        "single": true,
+        "height": 0
+    },
+    "features": [
+        {
+            "code": "application",
+            "explain": "kike",
+            "icon": "logo.png",
+            "platform": [
+                "win32",
+                "darwin",
+                "linux"
+            ],
+            "cmds": [
+                "kike",
+                "待办",
+                "todo"
+            ]
+        }
+    ]
+}

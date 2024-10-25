@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>待办导出</title>
+  <link rel="stylesheet" href="./assets/scroll.css">
+  <link rel="stylesheet" href="./assets/theme.css">
+</head>
+<body>
+
+</body>
+<script type="module">
+    import {getAll} from './assets/db.js'
+
+    const todosByDate = await getAll();
+    let output = '';
+
+    for (const [date, todos] of Object.entries(todosByDate)) {
+        output += `## ${date}\n\n`;
+        todos.forEach(todo => {
+            const completedMarker = todo.completed ? '[x]' : '[ ]';
+            output += `- ${completedMarker} ${todo.text}\n`;
+        });
+        output += '\n'; // 添加空行以分隔日期
+    }
+
+    window.document.write('<pre>' + output.trim() + '</pre>');
+</script>
+<script src='./assets/theme.js'></script>
+</html>
