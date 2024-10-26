@@ -15,6 +15,14 @@
     background-color: #ff7680; /* 和 + 按钮一样的悬停效果 */
 }
 
+.dark #calendarViewBtn {
+    background-color: #bb343e;
+
+}
+
+.dark #calendarViewBtn:hover {
+    background-color: #c55e65; /* 和 + 按钮一样的悬停效果 */
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -35,6 +43,11 @@ body {
     outline: -webkit-focus-ring-color auto 1px;
     color: #221f1f;
 
+}
+
+.dark .date-nav {
+    background-color: #936f2d;
+    color: white;
 }
 
 .arrow {
@@ -107,6 +120,11 @@ body {
     outline: -webkit-focus-ring-color auto 1px;
 }
 
+.dark .todo-container {
+    background-color: #363232;
+    border: 1px solid #363232;
+}
+
 /* 新增样式以调整日期选择器的位置 */
 .date-picker-container {
     display: flex;
@@ -149,8 +167,16 @@ body {
     background-color: #fff;
 }
 
+.dark .todo-text {
+    background-color: #363232;
+    color: #fafafa;
+}
+
 .todo-text[disabled] {
     background-color: #f9f9f9;
+}
+.dark .todo-text[disabled] {
+    background-color: #363232;
 }
 
 .completed {
@@ -186,6 +212,10 @@ body {
     color: black; /* 反色显示 */
     font-size: 12px;
     white-space: nowrap;
+}
+
+.dark .calendar-day.today {
+    background-color: #b9b97e; /* 今日的背景 */
 }
 
 .calendar-nav {
@@ -241,6 +271,15 @@ body {
     font-size: 16px;
 }
 
+.dark #addTodo {
+    background-color: #7ba628;
+    color: #fafafa;
+}
+
 #addTodo:hover {
-    background-color: #b9e563
+    background-color: #b9e563;
+}
+.dark #addTodo:hover {
+    background-color: #96b750;
+    color: #fafafa;
 }

@@ -6,9 +6,34 @@
   <title>待办导出</title>
   <link rel="stylesheet" href="./assets/scroll.css">
   <link rel="stylesheet" href="./assets/theme.css">
-</head>
-<body>
+  <style>
+    .bg-color {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+    }
 
+    .btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+  </style>
+</head>
+<body class="bg-color">
+  <div class="container"></div>
+  <button class="btn">复制</button>
 </body>
 <script type="module">
     import {getAll} from './assets/db.js'
@@ -25,7 +50,16 @@
         output += '\n'; // 添加空行以分隔日期
     }
 
-    window.document.write('<pre>' + output.trim() + '</pre>');
+    const content = output.trim();
+
+    document.querySelectorAll('.container').item(0).innerHTML = `<pre>${content}</pre>`;
+
+    document.querySelectorAll('.btn').item(0)
+        .addEventListener('click', () => {
+            utools.copyText(content);
+            utools.showNotification('已复制到剪切板')
+        })
+
 </script>
 <script src='./assets/theme.js'></script>
 </html>
