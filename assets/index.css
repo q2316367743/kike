@@ -157,10 +157,7 @@ body {
     color: #131315;
 
     font-size: 16px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 1px;
+    padding: 15px 15px 15px 1px;
     margin-right: 10px;
     border: none;
     outline: none;
@@ -185,26 +182,21 @@ body {
 }
 
 .todo-buttons .delete-confirm {
-    background-color: #FF4351;
     color: white;
-    border-color: #FF4351;
-    border: none;
+    border: none #FF4351;
     background: #FF4351;
 }
 
 
 .todo-buttons button {
     animation-name: glowing-primary;
-    border-color: #088ef0;
     background: linear-gradient(#34a5f8, #088ef0);
     color: #FFF;
-    margin: 2.5px;
-    border-style: solid;
-    border-width: 1px;
+    margin: 3px;
     line-height: 25px;
     border-radius: 4px;
     text-align: center;
-    border: none;
+    border: 1px none #088ef0;
 }
 
 .calendar-day.today {
