@@ -3,7 +3,7 @@
 
 可以在线使用，也可以将 HTML 文件保存下来使用，所有数据存储在本地。
 
-https://troilus.github.io/kike/
+原仓库：<https://github.com/troilus/kike>
 
 - 周
 
@@ -17,9 +17,6 @@ https://troilus.github.io/kike/
 
 ![image](https://github.com/user-attachments/assets/97e90f0f-550c-4842-ae05-9467755483aa)
 
-
-
-
 ## 使用说明
 1. 点击日期可以切换日期，点击<>可以切换上一周、下一周
 2. 点击+新增待办
@@ -31,4 +28,3 @@ https://troilus.github.io/kike/
 8. 日历视图下，可以拖动改变任务日期
 9. ctrl+. 可以以markdown格式导出所有任务
 10. ctrl+/ 可以显示使用说明
-11. ctrl+, 可以导入任务（格式同9导出的）
